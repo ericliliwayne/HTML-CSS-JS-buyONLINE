@@ -2,59 +2,110 @@
     box-sizing: border-box;
     margin: 0;
 }
-/* body{
-    
-} */
+body {
+    /*設定動態背景*/
+    background-color: aliceblue;
+    animation-name: example;
+    animation-duration: 12s;
+    animation-iteration-count: infinite
+}
+
+@keyframes example {
+    0% {
+        background-color: rgb(255, 0, 0, 0.1);
+    }
+
+    14% {
+        background-color: rgb(255, 128, 0, 0.1);
+    }
+
+    28% {
+        background-color: rgb(255, 255, 0, 0.1);
+    }
+
+    42% {
+        background-color: rgb(0, 255, 0, 0.1);
+    }
+
+    56% {
+        background-color: rgb(0, 0, 255, 0.1);
+    }
+
+    70% {
+        background-color: rgb(111, 0, 255, 0.1);
+    }
+
+    84% {
+        background-color: rgb(127, 0, 127, 0.1);
+    }
+
+    100% {
+        background-color: rgb(255, 0, 0, 0.1);
+    }
+}
+
 #table{
+    top:-50px;
     display: flex;
     flex-wrap: wrap;
     width:1100px;
-    height: 1300px;
-    background-color: beige;
+    height: 935px;
+    border: 2px solid black;
+    background-color:transparent;
     margin: auto;
-    padding: 50px;
+    padding: 0px;
     justify-content: center;
-    align-content: flex-start;
+    align-content: center;
 }
 .title{
     flex-basis: 100%;
-    height: 100px;
-    border: 1px solid lightgray;
+    height: 130px;
+    border: 1px dashed lightslategray;
     font-size: 60px;
     text-align: center;
-    line-height: 170%;
+    line-height: 200%;
+    background-color: rgb(255, 215, 0,0.5);
+    font-weight: bolder;
 }
 .menu1{
     flex-basis: 35%;
     height: 50px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
     line-height: 170%;
+    background-color: rgb(135, 206, 250,0.5);
+    font-weight:bold;
 }
 .menu2{
     flex-basis: 15%;
     height: 50px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
     line-height: 170%;
+    background-color: rgb(154, 255, 154,0.5);
+    font-weight:bold;
 }
 .menu3{
     flex-basis: 25%;
     height: 50px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
     line-height: 170%;
+    background-color: rgb(255, 231, 186,0.5);
+    font-weight:bold;
 }
 .menu4{
     flex-basis: 25%;
     height: 50px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
     line-height: 170%;
+    background-color: rgb(255, 193, 193,0.5);
+    font-weight:bold;
 }
 .pro1{
     display: flex;
@@ -62,10 +113,11 @@
     align-items: center;
     flex-basis: 35%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: left;
     line-height:260%;
+    background-color: rgb(135, 206, 250,0.5);
 }
 #mainmeal{
     font-size: 30px;
@@ -79,9 +131,10 @@
     align-items: center;
     flex-basis: 15%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(154, 255, 154,0.5);
 }
 .num1{
     display: flex;
@@ -89,9 +142,10 @@
     align-items: center;
     flex-basis: 25%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(255, 231, 186,0.5);
 }
 #NUM1{
     width: 50%;
@@ -103,9 +157,10 @@
     align-items: center;
     flex-basis: 25%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(255, 193, 193,0.5);
 }
 .pro2{
     display: flex;
@@ -113,10 +168,11 @@
     align-items: center;
     flex-basis: 35%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: left;
     line-height:260%;
+    background-color: rgb(135, 206, 250,0.5);
 }
 #sidemeal{
     font-size: 30px;
@@ -130,9 +186,10 @@
     align-items: center;
     flex-basis: 15%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(154, 255, 154,0.5);
 }
 .num2{
     display: flex;
@@ -140,9 +197,10 @@
     align-items: center;
     flex-basis: 25%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(255, 231, 186,0.5);
 }
 #NUM2{
     width: 50%;
@@ -154,9 +212,10 @@
     align-items: center;
     flex-basis: 25%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(255, 193, 193,0.5);
 }
 .pro3{
     display: flex;
@@ -164,10 +223,11 @@
     align-items: center;
     flex-basis: 35%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: left;
     line-height:260%;
+    background-color: rgb(135, 206, 250,0.5);
 }
 #drink{
     font-size: 30px;
@@ -181,9 +241,10 @@
     align-items: center;
     flex-basis: 15%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(154, 255, 154,0.5);
 }
 .num3{
     display: flex;
@@ -191,9 +252,10 @@
     align-items: center;
     flex-basis: 25%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(255, 231, 186,0.5);
 }
 #NUM3{
     width: 50%;
@@ -205,9 +267,10 @@
     align-items: center;
     flex-basis: 25%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(255, 193, 193,0.5);
 }
 .pro4{
     display: flex;
@@ -215,10 +278,11 @@
     align-items: center;
     flex-basis: 35%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: left;
     line-height:260%;
+    background-color: rgb(135, 206, 250,0.5);
 }
 #dessert{
     font-size: 30px;
@@ -232,9 +296,10 @@
     align-items: center;
     flex-basis: 15%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(154, 255, 154,0.5);
 }
 .num4{
     display: flex;
@@ -242,9 +307,10 @@
     align-items: center;
     flex-basis: 25%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(255, 231, 186,0.5);
 }
 #NUM4{
     width: 50%;
@@ -256,9 +322,10 @@
     align-items: center;
     flex-basis: 25%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(255, 193, 193,0.5);
 }
 #total{
     display: flex;
@@ -266,16 +333,55 @@
     align-items: center;
     flex-basis: 75%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
-    text-align: center;}
+    text-align: center;
+    background-color: rgb(240, 255, 250,0.5);
+    font-weight: bold;
+}
 .toBtn{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-basis: 25%;
     height: 150px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightslategray;
     font-size: 30px;
     text-align: center;
+    background-color: rgb(198, 226, 255,0.5);
+}
+span {
+    color: red;
+    font-size: 75px;
+    font-weight: normal;
+}
+#costa,#costb,#costc,#costd{
+    color:darkslateblue;
+    font-size: 50px;
+}
+#pria,#prib,#pric,#prid{
+    color: darkmagenta;
+    font-size: 50px;
+}
+#pp{
+    font-size: 15px;
+}
+#rebtn{
+    font-size: 30px;
+    background-color: pink;
+    color: darkred;
+    border: 2px solid red;
+    border-radius: 15px;
+}
+#tobtn{
+    font-size: 30px;
+    background-color: lightgreen;
+    color: darkgreen;
+    border: 2px solid green;
+    border-radius: 15px;
+}
+#rebtn:hover,#tobtn:hover{
+    font-size: 50px;
+    cursor: pointer;
 }
