@@ -21,7 +21,7 @@
         <div class="menu4">總價</div>
         <!-- 第一區 -->
         <div class="pro1">
-            <form action="">
+            
                 <label for="mainmeal">點選主餐:
                     <select name="mainmeal" id="mainmeal">
                         <option value="請選擇主餐!" data-cost=" 0">請選擇主餐!</option>
@@ -36,15 +36,13 @@
                         <option value="大熱狗" data-cost="80">大熱狗</option>
                     </select>
                 </label>
-            </form>
+            
         </div>
         <div class="pri1">
             <p id="pria">0</p> 元
         </div>
         <div class="num1">
-            <form action="">
-                <input type="text" id="NUM1"> 個
-            </form>
+                <input type="number" id="NUM1"> 個
         </div>
         <div class="cost1">
             <p id="costa">0</p> 元
@@ -52,7 +50,7 @@
         
         <!-- 第二區 -->
         <div class="pro2">
-            <form action="">
+            
                 <label for="sidemeal">點選副餐:
                     <select name="sidemeal" id="sidemeal">
                         <option value="請選擇副餐!" data-cost=" 0">請選擇副餐!</option>
@@ -67,15 +65,13 @@
                         <option value="酸辣湯" data-cost="35">酸辣湯</option>
                     </select>
                 </label>
-            </form>
+            
         </div>
         <div class="pri2">
             <p id="prib">0</p> 元
         </div>
         <div class="num2">
-            <form action="">
-                <input type="text" id="NUM2"> 個
-            </form>
+                <input type="number" id="NUM2"> 個
         </div>
         <div class="cost2">
             <p id="costb">0</p> 元
@@ -83,7 +79,7 @@
 
         <!-- 第三區 -->
         <div class="pro3">
-            <form action="">
+            
                 <label for="drink">點選飲料:
                     <select name="drink" id="drink">
                         <option value="請選擇飲料!" data-cost=" 0">請選擇飲料!</option>
@@ -98,15 +94,13 @@
                         <option value="仙草茶" data-cost="25">仙草茶</option>
                     </select>
                 </label>
-            </form>
+            
         </div>
         <div class="pri3">
             <p id="pric">0</p> 元
         </div>
         <div class="num3">
-            <form action="">
-                <input type="text" id="NUM3"> 個
-            </form>
+                <input type="number" id="NUM3"> 個
         </div>
         <div class="cost3">
             <p id="costc">0</p> 元
@@ -114,7 +108,7 @@
 
         <!-- 第四區 -->
         <div class="pro4">
-            <form action="">
+            
                 <label for="dessert">點選甜點:
                     <select name="dessert" id="dessert">
                         <option value="請選擇甜點!" data-cost=" 0">請選擇甜點!</option>
@@ -129,15 +123,13 @@
                         <option value="芒果冰沙" data-cost="60">芒果冰沙</option>
                     </select>
                 </label>
-            </form>
+            
         </div>
         <div class="pri4">
             <p id="prid">0</p> 元
         </div>
         <div class="num4">
-            <form action="">
-                <input type="text" id="NUM4"> 個
-            </form>
+                <input type="number" id="NUM4"> 個
         </div>
         <div class="cost4">
             <p id="costd">0</p> 元
@@ -159,6 +151,12 @@
                 let str = "";
                 $( "#mainmeal option:selected" ).each(function() {
                     str += $( this ).data("cost");
+                    if($("#NUM1").val()==''){
+                        $("#NUM1").val()==0;
+                    }
+                    let str2 = $("#NUM1").val();
+                    let result = str2 * str;
+                    $("#costa").html(result);
                 });
                 $("#pria").html(str);
             })
@@ -167,6 +165,12 @@
                 let str = "";
                 $( "#sidemeal option:selected" ).each(function() {
                     str += $( this ).data("cost");
+                    if($("#NUM2").val()==''){
+                        $("#NUM2").val()==0;
+                    }
+                    let str2 = $("#NUM2").val();
+                    let result = str2 * str;
+                    $("#costb").html(result);
                 });
                 $("#prib").html(str);
             })
@@ -175,6 +179,12 @@
                 let str = "";
                 $( "#drink option:selected" ).each(function() {
                     str += $( this ).data("cost");
+                    if($("#NUM3").val()==''){
+                        $("#NUM3").val()==0;
+                    }
+                    let str2 = $("#NUM3").val();
+                    let result = str2 * str;
+                    $("#costc").html(result);
                 });
                 $("#pric").html(str);
             })
@@ -183,6 +193,12 @@
                 let str = "";
                 $( "#dessert option:selected" ).each(function() {
                     str += $( this ).data("cost");
+                    if($("#NUM4").val()==''){
+                        $("#NUM4").val()==0;
+                    }
+                    let str2 = $("#NUM4").val();
+                    let result = str2 * str;
+                    $("#costd").html(result);
                 });
                 $("#prid").html(str);
             })
